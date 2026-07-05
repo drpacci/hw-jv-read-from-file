@@ -9,7 +9,7 @@ public class FileWork {
     public String[] readFromFile(String fileName) {
         try {
             String allWords = Files.readString(Path.of(fileName));
-            String[] words =  allWords.toLowerCase().split(("[\\s\\p{Punct}]+"));
+            String[] words = allWords.toLowerCase().split(("[\\s\\p{Punct}]+"));
             int count = 0;
 
             for (String word : words) {
